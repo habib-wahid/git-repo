@@ -16,8 +16,8 @@ public class AwsEcsApplication {
   }
 
   @GetMapping("/api/v1/hello")
-  public String hello(@RequestParam String name){
-    return "hello" + name;
+  public String hello(@RequestParam String userName){
+    return "hello" + userName;
   }
   public static void main(String[] args) {
     SpringApplication.run(AwsEcsApplication.class, args);
