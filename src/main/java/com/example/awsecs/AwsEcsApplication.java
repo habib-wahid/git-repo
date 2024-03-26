@@ -19,6 +19,11 @@ public class AwsEcsApplication {
   public String hello(@RequestParam String user){
     return "hello" + user;
   }
+
+  public String devBranchChange(){
+    return "dev changes";
+  }
+
   public static void main(String[] args) {
     SpringApplication.run(AwsEcsApplication.class, args);
   }
