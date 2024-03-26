@@ -24,6 +24,9 @@ public class AwsEcsApplication {
     return "dev changes";
   }
 
+  public String rebaseBranch(){
+    return "rebase";
+  }
   public static void main(String[] args) {
     SpringApplication.run(AwsEcsApplication.class, args);
   }
